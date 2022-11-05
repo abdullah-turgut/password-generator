@@ -4,27 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 id="title">Generate a <span class="cta">random password</span></h1>
-    <h4 id="slogan">Never use an insecure password again.</h4>
+    <div class="container">
+      <h1 id="title">
+        Generate a <br /><span class="cta">random password</span>
+      </h1>
+      <h4 id="slogan">Never use an insecure password again.</h4>
 
-    <div id="settings">
-      <input id type="number" />
-      <div>
-        <label for="numbers"
-          >Do you want to add use symbols and numbers in your password?</label
-        >
-        <input type="checkbox" name="symbols-numbers" id="symbols-numbers" />
+      <div id="settings">
+        <div>
+          <label for="length-pass">Password Length (default=15)</label>
+          <input id="length-pass" name="length-pass" type="number" />
+        </div>
+        <div>
+          <label for="symbols-numbers">Symbols and numbers?</label>
+          <input type="checkbox" name="symbols-numbers" id="symbols-numbers" />
+        </div>
+        <button id="generate-btn">Generate Passwords</button>
       </div>
 
-      <button id="generate">GENERATE</button>
-
       <div class="created-passwords">
-        <p class="created-pass" id="pass1">asfg8123</p>
-        <p class="created-pass" id="pass2">asd1231,</p>
+        <p class="created-pass" id="pass1"></p>
+        <p class="created-pass" id="pass2"></p>
       </div>
     </div>
 
