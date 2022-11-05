@@ -8,6 +8,26 @@
     <title>Document</title>
   </head>
   <body>
+    <h1 id="title">Generate a <span class="cta">random password</span></h1>
+    <h4 id="slogan">Never use an insecure password again.</h4>
+
+    <div id="settings">
+      <input id type="number" />
+      <div>
+        <label for="numbers"
+          >Do you want to add use symbols and numbers in your password?</label
+        >
+        <input type="checkbox" name="symbols-numbers" id="symbols-numbers" />
+      </div>
+
+      <button id="generate">GENERATE</button>
+
+      <div class="created-passwords">
+        <p class="created-pass" id="pass1">asfg8123</p>
+        <p class="created-pass" id="pass2">asd1231,</p>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
