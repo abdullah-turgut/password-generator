@@ -94,7 +94,7 @@ input[type='checkbox'] {
 
 .created-pass {
   font-size: 20px;
-  /* background: #273549; */
+  background: #273549;
   color: #4adf86;
   width: 100%;
   text-align: center;
@@ -102,4 +102,5 @@ input[type='checkbox'] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: none;
 }
