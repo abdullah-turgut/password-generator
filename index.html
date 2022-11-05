@@ -26,15 +26,15 @@
           <input id="length-pass" name="length-pass" type="number" />
         </div>
         <div>
-          <label for="symbols-numbers">Symbols and numbers?</label>
+          <label for="symbols-numbers">Include symbols and numbers?</label>
           <input type="checkbox" name="symbols-numbers" id="symbols-numbers" />
         </div>
         <button id="generate-btn">Generate Passwords</button>
       </div>
 
       <div class="created-passwords">
-        <p class="created-pass" id="pass1"></p>
-        <p class="created-pass" id="pass2"></p>
+        <p class="created-pass hidden" id="pass1" onclick="copyText(this)"></p>
+        <p class="created-pass hidden" id="pass2" onclick="copyText(this)"></p>
       </div>
     </div>
 
